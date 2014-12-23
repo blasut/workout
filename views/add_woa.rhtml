@@ -1,0 +1,29 @@
+ <header>
+    <a href="/" class="back">Back</a>
+    <h1>Add Exercise</h1>
+  </header>
+<form action="" method="post" id="exercise_data">
+<div id="step_1" class="step">
+    <div class="clearfix">
+      <input type="date" name="date" autofocus class="date date-field" placeholder="<%= @date %>"/>
+    </div>
+
+    <div class="clearfix">
+      <input type="text" name="name" class="name" placeholder="Name of exercise" />
+    </div>
+
+</div>
+<div id="step_2" class="step clearfix">
+    <input type="tel" name="set"  class="set" placeholder="Sets"/>
+</div>
+<div id="step_3" class="step clearfix">
+    <input type="tel" name="rep"  class="rep" placeholder="Reps"/>
+</div>
+<div id="step_4" class="step">
+    <input type="tel" name="weight" placeholder="Weight in KG"  />
+</div>
+<div id="buttons">
+  <input type="submit" value="Add another" class="submit button" />
+  <input type="submit" class="done button" value="I'm finished" />
+</div>
+</form>

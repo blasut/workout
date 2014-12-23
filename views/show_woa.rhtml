@@ -1,0 +1,12 @@
+<header>
+  <a href="/woas" class="back">Back</a>
+  <h1>Exercises</h1>
+</header>
+
+<ul class="menu">
+<% @exercises.each do |e| %>
+  <li class="menu-item">
+  <a href="/woa/<%= @woa.id %>/e/<%= e.id %>" class="menu-item-link"><%= e.name %></a>
+  </li>
+<% end %>
+</ul>

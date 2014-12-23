@@ -1,0 +1,224 @@
+/*
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+a { color: #fff; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+a:visited { color: #fff; }
+a:hover { color: #fff; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"], [role="button"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =====================================================
+   Author:
+   ========================================================================== */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+
+/* ==|== Heading ============================ */
+
+header {
+	text-align: center;
+	height: 43px;
+	border-bottom: 1px solid #212730;
+	border-top: 1px solid #e7eaef;
+	box-shadow: 0 -1px 0 #ced5de;
+	background-color: #7f93b0;
+	background-image: -webkit-linear-gradient(bottom, rgb(111,133,162) 0%, rgb(127,148,176) 50%, rgb(137,155,178) 50%, rgb(179,190,204) 100%);
+	position: relative;
+	margin-bottom: 20px;
+}
+header .back {
+	background: url(../img/back-normal.png) no-repeat 6px 7px;
+	background-size: 51px 30px;
+	display: inline-block;
+	width: 67px;
+	height: 36px;
+	padding: 14px 0 0 20px;
+	position: absolute;
+	top: 0; left: 0;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	text-shadow: 0 -1px rgba(0,0,0,.6);
+}
+header .back:active {
+	background: url(../img/back-active.png) no-repeat 6px 7px;
+}
+
+h1 {
+	font-size: 20px;
+	color: #fff;
+	text-shadow: 0 -1px rgba(0,0,0,.4);
+	text-align: center;
+	margin: 8px 0 0;
+}
+
+/* Add woa */
+input {
+  width: 100%;
+  height: 100px;
+  font-size: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+#step1 div {
+  margin-top: 10px;
+}
+.step, .clearfix {
+  margin-bottom: 200px;
+}
+.button {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 10px 0;
+  height: 70px;
+}
+#buttons {
+	margin-top: -180px;
+} 
+.submit {
+	background: #9C9C9C;
+}
+.done {
+	background: #179637;
+	border: 1px solid #17801E;
+}
+
+/** start page */
+header .add {
+	background: url(../img/add-normal.png) no-repeat 6px 7px;
+	background-size: 40px 35px;
+	display: inline-block;
+	width: 40px;
+	height: 36px;
+	padding: 14px 0 0 20px;
+	position: absolute;
+	top: 0; right: 0;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	text-shadow: 0 -1px rgba(0,0,0,.6);
+}
+header .add:active {
+}
+.menu {
+  padding:0;
+  margin-top: -20px;
+}
+.menu-item {
+  list-style:none;
+}
+.menu-item-link {
+  width: 100%;
+  background: #566c8a;
+  display:block;
+  padding: 15px;
+  border-bottom: 1px solid rgba(25,55,80,0.5);
+}
+.menu-item-link:active {
+  background: #1f749c;
+}
+
+/* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* prevent callout */
+.nocallout {-webkit-touch-callout: none;}
+
+/* Text overflow with ellipsis */
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+textarea[contenteditable] {-webkit-appearance: none;}
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+

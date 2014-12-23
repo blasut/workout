@@ -1,0 +1,14 @@
+<header>
+  <a href="/" class="back">Back</a>
+  <h1>All Work out occasions</h1>
+</header>
+
+
+<ul class="menu">
+<% @woas.each do |woa| %>
+  <li class="menu-item">
+    <a href="/woa/<%= woa.id %>" class="menu-item-link"><%= woa.date %></a>
+  </li>
+<% end %>
+</ul>
+
